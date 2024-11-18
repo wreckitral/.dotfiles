@@ -35,6 +35,7 @@ export EDITOR=nvim
 alias c='clear'
 alias nf='neofetch'
 alias pf='pfetch'
+alias ff='kitten icat --align=left --place 28x12@4x8  ~/Downloads/webcam-toy-photo24\(3\).jpg | fastfetch --raw - --logo-width 28 --logo-height 12'
 alias ls='eza --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
@@ -226,6 +227,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 plugins=(
     git
     zsh-autosuggestions
+    asdf
 )
 
 source $ZSH/oh-my-zsh.sh

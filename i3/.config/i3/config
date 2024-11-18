@@ -51,7 +51,6 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
@@ -210,6 +209,9 @@ bindsym $mod+Delete mode "$mode_system"
 # Browser
 bindsym $mod+b exec firefox
 
+# Pdf viewer
+bindsym $mod+p exec sioyek
+
 # File manager
 bindsym $mod+e exec thunar
 
@@ -226,9 +228,9 @@ bindsym XF86MonBrightnessUp exec brightnessctl s +5%
 exec_always feh --bg-fill ~/.dotfiles/backgrounds/goku-dark-blue.jpg
 
 # Screenshots
-bindsym $mod+Print exec --no-startup-id maim "/home/$USER/Pictures/screenshots/$(date)"
-bindsym Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshots/$(date)"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/screenshots/$(date)"
+bindsym $mod+Print exec --no-startup-id maim "/home/$USER/Pictures/screenshots/$(date).png"
+bindsym Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshots/$(date).png"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/screenshots/$(date).png"
 
 ## Clipboard Screenshots
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
