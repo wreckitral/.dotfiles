@@ -210,7 +210,7 @@ bindsym $mod+Delete mode "$mode_system"
 bindsym $mod+b exec firefox
 
 # Pdf viewer
-bindsym $mod+p exec sioyek
+bindsym $mod+p exec zathura ~/books/Distributed-services-with-go-your-guide-to-reliable-scalable-and-maintainable-systems-9.pdf
 
 # File manager
 bindsym $mod+e exec thunar
@@ -225,7 +225,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl s +5%
 
 # Wallpaper
-exec_always feh --bg-fill ~/.dotfiles/backgrounds/goku-dark-blue.jpg
+exec_always feh --bg-fill ~/Pictures/depa/uwu-arch-linux-5k-wd.jpg
 
 # Screenshots
 bindsym $mod+Print exec --no-startup-id maim "/home/$USER/Pictures/screenshots/$(date).png"

@@ -58,6 +58,7 @@ alias rmi='rm -r -i'
 alias wili='nmcli device wifi list'
 alias wicon='nmcli device wifi connect --ask'
 alias xw='cd /opt/lampp/htdocs'
+alias hdmicon='xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1-0 --mode 1920x1080 --same-as eDP-1'
 # -----------------------------------------------------
 # Window Managers
 # -----------------------------------------------------
@@ -261,3 +262,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /home/ralph/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$PATH:/usr/local/protobuf/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ralph/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ralph/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ralph/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ralph/google-cloud-sdk/completion.zsh.inc'; fi
